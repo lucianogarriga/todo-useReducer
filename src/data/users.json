@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "first_name": "Ricardo",
+        "last_name": "Gonzales",
+        "email": "rgonzales@gmail.com"
+    },{
+        "id": 2,
+        "first_name": "Carlos",
+        "last_name": "Perez",
+        "email": "cperez@gmail.com"
+    },{
+        "id": 3,
+        "first_name": "Manuel",
+        "last_name": "Gomez",
+        "email": "mgomez@gmail.com"
+    },{
+        "id": 4,
+        "first_name": "Ariel",
+        "last_name": "Parlo",
+        "email": "aparlo@gmail.com"
+    },{
+        "id": 5,
+        "first_name": "Julian",
+        "last_name": "Nano",
+        "email": "jnano@gmail.com"
+    }
+]
