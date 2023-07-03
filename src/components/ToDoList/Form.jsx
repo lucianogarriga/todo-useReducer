@@ -7,7 +7,8 @@ const Form = ({addTask}) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        addTask(inputText)
+        addTask(inputText);
+        e.currentTarget.reset();
     }
     console.log(inputText);
 

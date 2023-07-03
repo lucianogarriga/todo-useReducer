@@ -7,7 +7,8 @@ const ToDoList = ({todoList}) => {
             <ol>
             {todoList.map((todo) => {
                 return  <li key={todo.date}>
-                    {`${todo.name} = ${todo.date}`}
+                    <span style={{fontWeight:"bold"}}>{todo.name} - </span>
+                    <span style={{fontSize:"10px"}}>Fecha:  {todo.date}</span>
                 </li>
             })}
             </ol>
