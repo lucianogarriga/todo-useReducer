@@ -1,6 +1,4 @@
-import React, { useReducer } from "react";
-import Form from "./Form";
-import ToDoList from "./ToDoList";
+import { useReducer } from 'react';
 
 const initialState = [];
 
@@ -13,27 +11,8 @@ const todosReducer = (state, action) => {
   }
 };
 
-const ToDoReducer = () => {
-  const [todoListState, dispatch] = useReducer(todosReducer, initialState);
+// Custom Hook = useTodoReducer
 
-  console.log(todoListState);
+const useTodoReducer = () => useReducer(todosReducer, initialState)
 
-  function addTaskHandler(text) {
-    dispatch({
-      type: "add",
-      payload: {
-        name: text,
-        date: new Date().toLocaleString(),
-      },
-    });
-  }
-
-  return (
-    <>
-      <Form addTask={addTaskHandler} />
-      <ToDoList todoList={todoListState} />
-    </>
-  );
-};
-
-export default ToDoReducer;
+export default useTodoReducer;

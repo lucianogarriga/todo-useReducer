@@ -10,7 +10,7 @@ import Users from './components/Users'
 import UsersClassComponent from './components/UsersClassComponent'
 import UsersHook from './components/UsersHook'
 import USERS_DATA from './data/users.json' 
-import ToDoReducer from './components/ToDoList/ToDoReducer'
+import ToDoComponent from './components/ToDoList/ToDoComponent'
 
 
 
@@ -22,7 +22,7 @@ function App() {
     <> 
       <div className="App">
         <Gretting text="Proyecto con React"/>  
-        <ToDoReducer/>
+        <ToDoComponent/>
       </div>
     </>
   )
