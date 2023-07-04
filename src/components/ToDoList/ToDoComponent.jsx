@@ -20,7 +20,7 @@ const ToDoComponent = () => {
   }
 
   return (
-    <>
+    <> 
       <Form addTask={addTaskHandler} />
       <ToDoList todoList={todoListState} />
     </>

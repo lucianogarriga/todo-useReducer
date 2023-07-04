@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Gretting = ({text = 'Default destructuring'}) => {
     return (
         <div>
-           <h2> {text}</h2>
+           <h2 style={{textAlign:'center'}}> {text}</h2>
         </div>
     );
 }
