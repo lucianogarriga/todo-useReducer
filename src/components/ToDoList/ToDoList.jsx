@@ -1,6 +1,8 @@
 import React from "react";
 
-const ToDoList = ({ todoList }) => {
+const ToDoList = ({ todoList, onRemove }) => {
+ 
+
   return (
     <>
       <h3 className="mt-4" style={{textAlign:'center'}}>Listado de tareas</h3>
@@ -18,7 +20,7 @@ const ToDoList = ({ todoList }) => {
                 <>
                 <tr key={todo.date} className="table-success">
                   <td style={{ fontWeight: "bold"}}>{todo.name}</td>
-                  <td> {todo.date} </td>
+                  <td> {todo.date} <i onClick={() => onRemove(todo.date)} className="bi bi-trash" style={{color:'red', cursor:'pointer'}}></i></td>
                   </tr>
                 </>
               );

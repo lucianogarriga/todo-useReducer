@@ -7,6 +7,7 @@ const ToDoComponent = () => {
   // Custom Hook - useTodoReducer - from './ToDoReducer.jsx'
   const [todoListState, dispatch] = useTodoReducer();
 
+
   console.log(todoListState);
 
   function addTaskHandler(text) {
@@ -18,11 +19,20 @@ const ToDoComponent = () => {
       },
     });
   }
+ 
+  function handleRemove(date){
+    dispatch({
+      type: "remove",
+      payload:{
+        date,
+      }
+    })
+  }
 
   return (
     <> 
       <Form addTask={addTaskHandler} />
-      <ToDoList todoList={todoListState} />
+      <ToDoList todoList={todoListState} onRemove={handleRemove}/>
     </>
   );
 };
