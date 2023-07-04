@@ -1,20 +1,19 @@
 #root {
+  min-width: auto;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem; 
+  padding: 5rem 1rem; 
 } 
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  place-items: center; 
   min-height: 100vh;
   color: rgba(30, 29, 29, 0.87);
   background-color: #eeecec; 
   background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80");
-  background-repeat: no-repeat;
-  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .form{
@@ -25,16 +24,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-table {
-  min-width: 320px;
-}
+} 
 
 thead tr th {
   background: lightgray;
   color: black;
   text-align: center;
+}
+table td { 
+  padding: 0.2rem;
 }
 
 .input-task{
@@ -42,12 +40,12 @@ thead tr th {
   color: black; 
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
-  }
-}
 
+@media only screen and (min-width: 600px) {
+  table{
+    max-width: 600px;
+  }
+} 
 /* h1 {
   font-size: 3.2em;
   line-height: 1.1;

@@ -6,11 +6,11 @@ const ToDoList = ({ todoList, onRemove }) => {
   return (
     <>
       <h3 className="mt-4" style={{textAlign:'center'}}>Listado de tareas</h3>
-      <table className="table"  style={{minWidth:"420px"}}>
+      <table className="table"  style={{maxWidth:"370px"}}>
         <thead>
           <tr >
-            <th scope="col" className="col-7">Tarea</th>
-            <th scope="col" className="col-5">Fecha y hora</th> 
+            <th scope="col" className="col-8">Tarea</th>
+            <th scope="col" className="col-4">Fecha y hora</th> 
           </tr>
         </thead>
         <tbody>
