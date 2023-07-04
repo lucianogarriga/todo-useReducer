@@ -2,25 +2,69 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem; 
-}
- 
-.card {
-  padding: 2em;
+} 
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: rgba(30, 29, 29, 0.87);
+  background-color: #eeecec; 
+  background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80");
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .form{
   width: 100%;
-  max-width: 600px;
+  min-width: 350px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
- 
-.title-changed{
+
+table {
+  min-width: 320px;
+}
+
+thead tr th {
+  background: lightgray;
+  color: black;
+  text-align: center;
+}
+
+.input-task{
+  background: lightgray;
+  color: black; 
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+/* .title-changed{
   background-color: tomato;
   color: darkblue;
   padding: 1rem;
   font-size: 20px;
+} */
+ 
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
+a:hover {
+  color: #535bf2;
+} */
